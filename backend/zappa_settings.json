@@ -1,0 +1,33 @@
+{
+  "prod": {
+    "app_function": "config.wsgi.application",
+    "aws_region": "us-east-1",
+    "certificate_arn": "",
+    "cors": true,
+    "domain": "api.example.com",
+    "django_settings": "config.settings",
+    "exclude": [],
+    "environment_variables": {
+      "ALLOWED_HOSTS": "*",
+      "AWS_STORAGE_BUCKET_NAME": "CHANGEME-storage-bucket-name",
+      "WEBSITE_URL": "https://www.example.com",
+      "ROOT_DOMAIN": "example.com",
+      "DJANGO_SETTINGS_MODULE": "config.settings",
+      "SENTRY_DSN": ""
+    },
+    "keep_warm": false,
+    "memory_size": 1024,
+    "project_name": "sample_cookiecutter-django-vue-graphql-aws",
+    "remote_env": "s3://prod.example.com/env.json",
+    "runtime": "python3.7",
+    "s3_bucket": "prod.example.com",
+    "tags": {
+      "app": "sample_prj"
+    },
+    "timeout_seconds": 30,
+    "vpc_config": {
+      "SubnetIds": [],
+      "SecurityGroupIds": []
+    }
+  }
+}
